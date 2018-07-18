@@ -1,0 +1,23 @@
+﻿@model IEnumerable<ITSRunning.Models.Telemetries.TelemetryDetails>
+@{
+    ViewData["Title"] = "Details";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="https://atlas.microsoft.com/sdk/css/atlas.min.css?api-version=1.0" type="text/css" />
+    <link rel="stylesheet" href="~/css/runner.css" />
+}
+
+<h2>Details</h2>
+<div id="map">
+
+</div>
+
+@section Scripts{
+    <script src="https://atlas.microsoft.com/sdk/js/atlas.min.js?api-version=1.0"></script>
+    <script src="~/js/geoLocation.js"></script>
+    <script>
+        var data = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model));
+        drawActivity(data);
+    </script>
+}

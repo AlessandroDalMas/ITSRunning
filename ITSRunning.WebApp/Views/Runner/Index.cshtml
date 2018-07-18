@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+@section Styles {
+    <link rel="stylesheet" href="~/css/runner.css" />
+}
+<h2>Runner</h2>
+
+<div class="row">
+    <div class="col-xs-6 center">
+        <a class="btn btn-primary" asp-area="" asp-controller="Training" asp-action="Index">Train</a>
+    </div>
+    <div class="col-xs-6 center">
+        <a class="btn btn-primary" asp-area="" asp-controller="Matching" asp-action="Index">Match</a>
+    </div>
+</div>

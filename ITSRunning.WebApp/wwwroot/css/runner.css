@@ -1,0 +1,32 @@
+.center {
+    text-align: center;
+}
+
+#map {
+    padding-top: 2vh;
+    height: 500px;
+    height: 70vh;
+    width: 100%;
+}
+
+#camera {
+    height: 500px;
+    height: 70vh;
+    width: 100%;
+}
+
+#cameraLauncher{
+    padding-top: 2vh;
+}
+
+.centered{
+    text-align: center;
+}
+
+.ms-pin {
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 200px 200px;
+}
