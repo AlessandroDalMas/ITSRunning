@@ -8,12 +8,12 @@ namespace ITSRunning.DataAccess
     {
         IEnumerable<T> Get();
 
-        T Get(int id);
+        T Get(TKey id);
 
         void Update(T value);
 
         void Insert(T value);
 
-        void Delete(int id);
+        void Delete(TKey id);
     }
 }
